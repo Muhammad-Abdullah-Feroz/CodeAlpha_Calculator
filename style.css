@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+:root{
+    --background-color:#595a5c;
+    --btn-primary-color:#e8e8e8;
+    --btn-secondary-color:#ffb144;
+    --display-color:#c0dccb;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    width: 400px;
+    height: 500px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: var(--background-color);
+    box-shadow: 0px 0px 10px 1px gray ,inset 0px 0px 5px 2px rgb(0, 0, 0);
+}
+.display{
+    width: 90%;
+    height: 20%;
+    border-radius: 12px;
+    background-color: var(--display-color);
+    margin: 20px auto;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px 1px black ,inset 0px 0px 10px 2px rgb(120, 151, 115);
+}
+.display input{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border: none;
+    font-size: 90px;
+    background-color: var(--display-color);
+    /* margin: 20px auto; */
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px 1px black ,inset 0px 0px 10px 2px rgb(120, 151, 115);
+}
+.keys{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 20px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.row input{
+    height: 60px;
+    width: 75px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--btn-primary-color);
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px black ,inset 0px 0px 10px 2px gray;
+    /* box-shadow: inset 0px 0px 5px 1px black; */
+}
+#equals {
+    background-color: var(--btn-secondary-color);
+    color: white;
+    font-size: 35px;
+    box-sizing: border-box;
+    /* padding: 10px; */
+}
+.textbox{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #c0dccb;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid blue;
+
+}
